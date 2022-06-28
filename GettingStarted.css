@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+@font-face {
+    font-family: 'Typeka-Bold';
+    src: url(Font/Typeka-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Typeka';
+    src: url(Font/Typeka.otf);
+}
+
+
+.navigation-bar {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+}
+
+.navbar {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Typeka-Bold;
+    font-size: x-large;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;  
+    justify-content: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    line-height: 65px;
+    padding: 0px 20px;
+}
+
+.navbar ul li a {
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #D4CFCE;
+}
+
+.navbar ul li a:hover {
+    color: #870101;
+    text-shadow: -1px 3px 3px #000000;
+}
+
+body {
+    background-image: url(Image/getstart.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Typeka';
+    font-size: 1rem;
+    position: relative;
+    min-height: 50px;
+}
+
+.main-header {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.main-header h1 {
+    font-family: 'Typeka-Bold';
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.header-tip {
+    background-image: url(photos/card-cover2.png);
+    background-position: center;
+    background-size: cover;
+    max-width: 937px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.header-tip h2 { 
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: #870101;
+}
+
+.header-tip p { 
+    line-height: 1.80rem;
+    text-align: justify;
+    font-size: large;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background-image: url(photos/card-cover.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: large;
+}
+
+.card p {
+    line-height: 1.80rem;
+    text-align: justify;
+}
+
+.card h2 { 
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: #870101;
+}
+
+.card img { 
+    height: 390px;
+}
+
+.card > div {
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+@media(max-width: 600px) {
+    .card {
+        display: block;
+    }
+}
+
+footer{
+    font-family: Typeka-Bold;
+    font-size: 10pt;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+
+
+}

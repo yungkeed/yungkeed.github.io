@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+@font-face {
+    font-family: 'Typeka-Bold';
+    src: url(Font/Typeka-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Typeka';
+    src: url(Font/Typeka.otf);
+}
+
+.navbar{
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Typeka-Bold;
+    font-size: x-large;
+    width: 100%;
+}
+
+.navbar ul{
+    float: center;
+    display: inline-flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    
+    display: inline-block;
+    line-height: 65px;
+    padding: 0px 20px; 
+}
+
+.navbar ul li a:hover{
+    color: #870101;
+    text-shadow: -1px 3px 3px #000000;
+}
+.navbar ul li a{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #D4CFCE;
+}
+
+body{
+    background: linear-gradient(to right, gray, white);
+    background-image: url("Image/aboutUs.jpg");  
+/*    background-color:black; */
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    place-items: center;
+}
+
+.main-header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.main-header h1 {
+    font-family: 'Typeka-Bold';
+    color: #FFFFFF;
+    text-shadow: black;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.container { 
+    font-family: 'Typeka';
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+
+img {
+    width: 125px;
+    height: 125px;
+}
+
+.developer{
+    padding-left: 640px;
+    padding-right: 640px;
+}
+
+.developer h2 {
+    justify-content: center;
+    display: flex;    
+    margin-bottom: .5rem;
+}
+
+.developer1 {
+    float: left;
+}
+
+.developer2 {
+    float: right;
+}
+
+.publish1 { 
+    justify-content: center;
+    display: flex;
+}
+
+.publisher h2 {
+    justify-content: center;
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: .5rem;
+}
+
+.socmeds {
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)  
+}
+
+.socmeds h2 {
+    font-family: 'Typeka';
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    justify-content: center;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: .5rem;
+}
+
+.socmeds .button {
+    color: inherit;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    background:  #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.socmeds .button:hover {
+    width: 200px;
+}
+
+.socmeds .button .icon {
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.socmeds .button .icon i {
+    color: black;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.socmeds .button span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.socmeds .button:nth-child(2):hover .icon {
+    background: #4267b2;
+}
+
+.socmeds .button:nth-child(3):hover .icon {
+    background: #1DA1F2;
+}
+
+.socmeds .button:nth-child(4):hover .icon {
+    background: #E1306C; 
+}
+
+.socmeds .button:nth-child(5):hover .icon {
+    background: #5865F2;
+}
+
+.socmeds .button:nth-child(1) span {
+    color: black;
+}
+
+.socmeds .button:nth-child(2) span {
+    color: black;
+}
+
+.socmeds .button:nth-child(3) span {
+    color: black;
+}
+
+.socmeds .button:nth-child(4) span {
+    color: black;
+}
+
+
+footer{
+    font-family: Typeka-Bold;
+    font-size: 10pt;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}

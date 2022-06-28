@@ -1,0 +1,67 @@
+ *{
+    padding: 0;
+    margin: 0;
+} 
+
+@font-face {
+    font-family: 'Typeka-Bold';
+    src: url(Font/Typeka-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Typeka';
+    src: url(Font/Typeka.otf);
+}
+
+body{
+    background-image: url("Image/homebg.jpg");  
+    background-color:black;
+    min-height: 100vh; 
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Typeka-Bold;
+    font-size: x-large;
+    width: 100%;
+}
+
+.navbar ul{
+    float: center;
+    display: inline-flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    line-height: 65px;
+    padding: 0px 20px; 
+}
+
+.navbar ul li a:hover{
+    color: #870101;
+    text-shadow: -1px 3px 3px #000000;
+}
+.navbar ul li a{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #D4CFCE;
+}
+
+footer{
+    font-family: Typeka-Bold;
+    font-size: 10pt;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
